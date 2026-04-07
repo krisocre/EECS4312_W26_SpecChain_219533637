@@ -1,22 +1,197 @@
-{  "personas": [
-    {
-      "id": "P1",
-      "name": "Frequent Activity Tracker",
-      "description": "A user who relies on the app to log workouts frequently and expects stable performance.",
-      "derived_from_group": "G1",
-      "goals": [
-        "Track workouts consistently",
-        "Log activity quickly"      ],
-      "pain_points": [
-        "App crashes during logging",
-        "Workout data sometimes disappears"      ],
-      "context": [
-        "Logging activities immediately after workouts",
-        "Using the app during outdoor exercise"      ],
-      "constraints": [
-        "Logging must be reliable",
-        "Data should not be lost"       ],
-      "evidence_reviews": [
-        "rev_12",
-        "rev_45"      ]
-    }  ] }
+{
+    "personas": [{
+            "id": "P1",
+            "name": "Locked-Out Subscriber",
+            "description": "A user who downloaded Headspace seeking mental wellness support but finds the majority of content behind a paywall, or who feels misled by pricing practices such as undisclosed billing, sudden price hikes, or difficult free trial cancellations. This user is frustrated by the gap between advertised accessibility and actual cost.",
+            "derived_from_group": "G1",
+            "goals": [
+                "Access core meditation and mindfulness content without being forced into a subscription immediately",
+                "Understand subscription pricing clearly and transparently before committing",
+                "Cancel or manage subscription billing without unexpected charges",
+                "Receive fair value for the subscription fee paid"
+            ],
+            "pain_points": [
+                "Nearly all content is gated behind a paid subscription with little usable free tier",
+                "Price increases occur without in-app notification, discovered only after renewal",
+                "Free trial periods result in immediate charges rather than the advertised trial period",
+                "Student discount verification process is broken or overly difficult",
+                "Subscription cancellation reminders are not sent, leading to unwanted renewals"
+            ],
+            "context": [
+                "First-time users exploring the app after a recommendation from a specialist or peer",
+                "Existing subscribers who experience a sudden and unexplained price hike",
+                "Users who signed up expecting a functioning free tier before committing to a subscription",
+                "Students or budget-conscious individuals attempting to access discounted plans"
+            ],
+            "constraints": [
+                "Pricing information must be displayed clearly before account creation is required",
+                "Free trial periods must not result in immediate billing",
+                "Users must be notified in-app before subscription renewals and price changes",
+                "Cancellation and billing management must be accessible within the app"
+            ],
+            "evidence_reviews": [
+                "fc36cf61-52aa-4982-b8e8-6b2010ad1486",
+                "a818a7e5-8c84-4cd7-b69c-62513167aa73",
+                "5dd05804-f714-43ec-88a1-dde44431fcbf",
+                "a4ccacbf-b2ea-46ec-8e90-3fd7a4f15184",
+                "c6d23b22-290f-4f63-8e93-66a50f52fff1",
+                "13a27745-13c7-48f1-a372-6e5ee40be8e4"
+            ]
+        },
+        {
+            "id": "P2",
+            "name": "Disrupted Meditator",
+            "description": "A paying subscriber who relies on Headspace for regular meditation or sleep sessions but is repeatedly prevented from completing sessions due to crashes, freezing, lag, or severe performance regressions introduced through app updates. This user often reports the app worked well before and has degraded over time.",
+            "derived_from_group": "G2",
+            "goals": [
+                "Complete a full meditation or sleep session without interruption",
+                "Experience fast and responsive app loading before and during sessions",
+                "Maintain consistent app performance across Android OS versions and device types",
+                "Receive timely fixes when regressions are introduced through updates"
+            ],
+            "pain_points": [
+                "App crashes mid-session, breaking concentration and defeating the purpose of meditation",
+                "Significant lag or loading delays before any session can begin",
+                "Crashes occur specifically during sleepcasts or audio playback, a regression introduced in late 2025",
+                "Performance has worsened with each successive update despite paying for the subscription",
+                "Reinstalling the app or restarting the device does not resolve persistent crashes"
+            ],
+            "context": [
+                "Using the app daily for meditation, focus, or sleep support",
+                "Experienced users who have been subscribers for 1\u20134 years and have observed degradation",
+                "Using the app on Android devices including Samsung Galaxy and other mid-to-high-end handsets",
+                "Attempting to use the app immediately before bed or during a break for stress relief"
+            ],
+            "constraints": [
+                "Sessions must not crash or freeze during active playback",
+                "App startup time must remain within acceptable bounds after updates",
+                "Updates must be regression-tested against common Android device and OS configurations",
+                "Audio sessions such as sleepcasts must complete reliably without silent failures"
+            ],
+            "evidence_reviews": [
+                "6d0be882-a490-435e-876f-372c830d84d9",
+                "d4d23acc-aea2-43be-94e2-d0258793cd74",
+                "d088eee2-e8c1-43fe-9175-0fbcb2212583",
+                "801923d5-fbc1-4623-9660-778684a67b4b",
+                "c171fe6e-2534-417a-92c9-731ec3febdfa",
+                "e58433bc-2c11-4c50-8349-f04b99ad8a29"
+            ]
+        },
+        {
+            "id": "P3",
+            "name": "Authentication-Blocked Returner",
+            "description": "A user who is unable to log in to their existing Headspace account, often after a device change, an app update, or a third-party authentication failure (e.g., Google, NHS, or employer-linked accounts). This user is paying for a subscription but cannot access any content, and support response is slow or ineffective.",
+            "derived_from_group": "G3",
+            "goals": [
+                "Log in to an existing account reliably on the first attempt",
+                "Retain access to previously subscribed content after changing devices",
+                "Receive timely and effective support when authentication fails",
+                "Connect employer, NHS, or insurance-linked subscriptions without account conflicts"
+            ],
+            "pain_points": [
+                "App redirects to a browser for login but fails to return to the app, creating an endless loop",
+                "Changing phones causes the app to create a new profile instead of restoring the existing account",
+                "Third-party account links (e.g., Cigna, NHS) fail silently with no actionable error message",
+                "Support tickets take weeks or months without resolution",
+                "App shows generic error messages (e.g., 'Oops') with no guidance on how to recover access"
+            ],
+            "context": [
+                "Returning users who have recently purchased or upgraded an Android device",
+                "Employees or insurance members accessing Headspace via a third-party benefit scheme",
+                "Users who cancelled and re-subscribed and lost access to their historical data",
+                "Users in non-English locales who encounter account errors with no localised support"
+            ],
+            "constraints": [
+                "Login must complete without requiring manual browser redirection loops",
+                "Account identity must persist and be recoverable after device migration",
+                "Third-party authentication integrations must surface descriptive error states",
+                "Support channels must acknowledge and resolve account access issues within a reasonable SLA"
+            ],
+            "evidence_reviews": [
+                "15fe4b34-503e-4209-905f-1ebf4f5af7e7",
+                "c495cc99-e06b-4e6f-a3a5-15caa838bbc2",
+                "2b18ee9b-5580-4344-ae9f-6af752ed723a",
+                "b1e748f3-ceb4-458d-8379-4122958619e8",
+                "4fe50ba1-e06d-4027-b7d3-7bfeaeaed582",
+                "82f630f4-552b-44bf-86d8-4b2825ea0cca"
+            ]
+        },
+        {
+            "id": "P4",
+            "name": "Navigation-Frustrated Subscriber",
+            "description": "A subscriber who values Headspace's meditation content but is unable to efficiently find, resume, or organise sessions due to a confusing and frequently changing UI. This user has often been a long-term subscriber and feels the app has regressed in usability following redesigns that prioritise aesthetics over functionality.",
+            "derived_from_group": "G4",
+            "goals": [
+                "Quickly find a specific meditation, sleep cast, or course without excessive tapping",
+                "Resume a previously started programme or course without losing progress",
+                "Filter and sort content by category, length, instructor, or topic",
+                "Understand where key features are located after an app update without relearning the entire interface"
+            ],
+            "pain_points": [
+                "UI redesigns remove previously intuitive navigation paths without equivalent replacements",
+                "No search or filter capability for the sleepcasts or course library",
+                "The daily meditation or recommended content timeline has been removed or hidden",
+                "Onboarding flows are long and confusing, yet still leave users unsure how to navigate the app",
+                "Content is cluttered and poorly categorised, making discovery frustrating for new users"
+            ],
+            "context": [
+                "Long-term subscribers (1\u20134 years) who have built habits around specific navigation patterns",
+                "New users attempting to find relevant content immediately after onboarding",
+                "Users with specific needs such as anxiety, sleep, or focus who want targeted content filtering",
+                "Users on Android who notice that UI changes have not been tested for usability"
+            ],
+            "constraints": [
+                "Core navigation paths must remain stable across major UI updates",
+                "Content library must be searchable and filterable by relevant attributes",
+                "In-progress courses and programmes must be surfaced prominently on the home screen",
+                "Onboarding must conclude with a clear entry point into the user's chosen content area"
+            ],
+            "evidence_reviews": [
+                "a87c08c2-155e-4769-8a94-be20322bf4a9",
+                "29d54e6c-8d47-4285-8571-b62cfb9fc5c6",
+                "51235b67-391e-4556-9937-b43260c33023",
+                "d9d4c4e1-e47d-495e-9270-9c60b4da5534",
+                "ef71b542-c602-4bd8-8d86-7f89d86e5269",
+                "f22ba192-fc39-4774-a95b-db89a6394c4e"
+            ]
+        },
+        {
+            "id": "P5",
+            "name": "Committed Wellness Practitioner",
+            "description": "A consistent, engaged user who has integrated Headspace into their daily routine for mental health management, anxiety reduction, or sleep improvement. This user derives measurable benefit from the app's guided meditations, sleep casts, and courses, and is motivated to continue using the app as a long-term wellness tool.",
+            "derived_from_group": "G5",
+            "goals": [
+                "Complete daily mindfulness or meditation sessions as part of an established routine",
+                "Access a wide variety of guided content including sleep, anxiety, focus, and course-based programmes",
+                "Track personal progress and streaks to maintain motivation",
+                "Discover new teachers, session lengths, or content categories over time"
+            ],
+            "pain_points": [
+                "Occasional app instability disrupts an otherwise positive experience",
+                "Limited ability to personalise content recommendations beyond initial onboarding answers",
+                "Concern that quality may decline if the app continues to be updated without care for core functionality",
+                "Some desired content types such as voice-to-text or more advanced journaling are absent"
+            ],
+            "context": [
+                "Using the app for 6 months to several years as a daily or near-daily habit",
+                "Managing conditions such as anxiety, depression, insomnia, or high-stress work environments",
+                "Using the app before bed, during commutes, or during breaks in a workday",
+                "Teenagers and young adults accessing the app for free through institutional programmes"
+            ],
+            "constraints": [
+                "Content quality and variety must be maintained or improved over time",
+                "App stability must not degrade core session functionality",
+                "The app must continue offering meaningful depth across different wellness dimensions such as sleep, anxiety, and focus",
+                "Personalised recommendations must evolve with the user's history and stated preferences"
+            ],
+            "evidence_reviews": [
+                "49ee2835-5764-4956-afce-3aa857ac342d",
+                "c6a0d0f8-3dac-4f70-bf87-1c69419f1fb7",
+                "994a69f1-e765-412f-9157-fecdb4a32bd1",
+                "b887513e-7df6-4cc1-97e8-49bbe47f9aed",
+                "1166f13d-274b-4261-b853-7f40768244ed",
+                "38ee5b1a-75f7-4010-a63a-d305c9d20964"
+            ]
+        }
+    ]
+}

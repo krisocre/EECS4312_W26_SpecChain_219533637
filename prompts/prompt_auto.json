@@ -1,3 +1,11 @@
 {
-    "prompt": ""
+  "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "theme_prompt_template": "You are a software requirements analyst studying user reviews of the Headspace meditation app on Android.\nBelow are {n} user reviews that have been grouped together by a TF-IDF + KMeans clustering algorithm because\nthey share similar vocabulary and topics.\n\nReviews:\n{reviews}\n\nTask:\nIdentify the single dominant theme that unifies these reviews. Respond only with valid JSON in this format:\n\n{{\n  \"theme\": \"<concise theme name, 4-8 words>\",\n  \"rationale\": \"<one sentence explaining what the reviews share>\"\n}}\n",
+  "persona_prompt_template": "You are a software requirements analyst. Below is a group of user reviews of the Headspace meditation app\non Android. The group has been labelled with the theme: \"{theme}\".\n\nReviews:\n{reviews}\n\nTask:\nCreate a structured user persona representing the kind of user who wrote these reviews. Respond only with\nvalid JSON in this format:\n\n{{\n  \"name\": \"<persona name, 2-4 words>\",\n  \"description\": \"<2-3 sentence description>\",\n  \"goals\": [\"<goal 1>\", \"<goal 2>\", \"<goal 3>\"],\n  \"pain_points\": [\"<pain 1>\", \"<pain 2>\", \"<pain 3>\", \"<pain 4>\"],\n  \"context\": [\"<context 1>\", \"<context 2>\", \"<context 3>\"],\n  \"constraints\": [\"<constraint 1>\", \"<constraint 2>\", \"<constraint 3>\"]\n}}\n",
+  "parameters": {
+    "reviews_per_call": 12,
+    "max_review_chars": 220,
+    "temperature": 0.3,
+    "max_tokens": 800
+  }
 }

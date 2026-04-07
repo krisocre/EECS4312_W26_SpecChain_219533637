@@ -1,0 +1,190 @@
+{
+  "personas": [
+    {
+      "id": "P_auto_1",
+      "name": "Frustrated Meditation Seeker",
+      "description": "A person who uses meditation apps like Headspace to manage stress and anxiety, but faces technical issues that hinder their experience.",
+      "derived_from_group": "A1",
+      "goals": [
+        "Easily access and use meditation content",
+        "Have a stable and reliable app experience",
+        "Effectively manage stress and anxiety through meditation"
+      ],
+      "pain_points": [
+        "Frequent app crashes and instability",
+        "Difficulty finding specific content, such as sleep casts",
+        "Issues with subscription recognition and access to content",
+        "Data usage concerns and inability to cancel subscription easily"
+      ],
+      "context": [
+        "Uses the app for both meditation and sleep purposes",
+        "May have a subscription through a health plan or directly",
+        "Expects a seamless and intuitive user experience"
+      ],
+      "constraints": [
+        "Limited technical expertise to troubleshoot issues",
+        "Reliance on the app for mental wellness",
+        "Expectation of high-quality content and service"
+      ],
+      "evidence_reviews": [
+        "209e1415-acc1-4e84-82fd-9d958d60eb5b",
+        "ad2a3d1f-5f88-4768-83f0-21100f386bbb",
+        "28fbe2b5-ef91-440c-b6b7-e4955e74ddcf",
+        "ca923315-d7c8-4d15-81ae-6e9d927827c1",
+        "09d92e1c-ccca-4cc9-bb5a-869c92a871de",
+        "15a9e967-0628-4916-bada-513c34eea2bc"
+      ],
+      "generation_method": "automated",
+      "source_cluster": "kmeans_cluster_0"
+    },
+    {
+      "id": "P_auto_2",
+      "name": "Frustrated Meditator",
+      "description": "A individual seeking relaxation and mindfulness through meditation, frustrated with the monetization model of the Headspace app. They value affordability and accessibility to meditation content.",
+      "derived_from_group": "A2",
+      "goals": [
+        "Access meditation content without financial burden",
+        "Find a relaxing and calming meditation experience",
+        "Use meditation to improve mental well-being"
+      ],
+      "pain_points": [
+        "Perceived aggressive monetization tactics",
+        "Limited access to free content",
+        "High subscription costs",
+        "Lack of transparency about free trials and subscription details"
+      ],
+      "context": [
+        "Financial constraints or limited budget",
+        "Seeking alternative relaxation methods",
+        "Previous experience with free or low-cost meditation resources"
+      ],
+      "constraints": [
+        "Limited disposable income",
+        "Skepticism about subscription-based models",
+        "Need for flexible and affordable access to meditation content"
+      ],
+      "evidence_reviews": [
+        "c62ac4d7-42c9-45eb-97b6-63d0968f19df",
+        "136a6c04-3565-49ce-a437-048148584a6b",
+        "b5b3dafb-658d-400a-b067-1b5a702ee1ad",
+        "50acc9da-7d1c-40bd-a31f-b72efd7203f3",
+        "36b38d2b-cf3d-4532-b87a-d25d7faed97e",
+        "5c31601a-69e7-471b-a81d-a50685ab62bf"
+      ],
+      "generation_method": "automated",
+      "source_cluster": "kmeans_cluster_1"
+    },
+    {
+      "id": "P_auto_3",
+      "name": "Frustrated Headspace User",
+      "description": "A long-time user of the Headspace meditation app who has become increasingly frustrated with the app's bugs, errors, and poor performance. They value the app's content and have a strong habit of using it daily, but are now experiencing a decline in their overall experience. They are likely to be tech-savvy and have tried troubleshooting steps.",
+      "derived_from_group": "A3",
+      "goals": [
+        "To have a reliable and enjoyable meditation experience",
+        "To access a wide range of meditation content and tools",
+        "To track progress and maintain a daily meditation habit"
+      ],
+      "pain_points": [
+        "Frequent app crashes and errors",
+        "Slow loading times and unresponsive UI",
+        "Loss of progress and inability to access content",
+        "Poor customer support and difficulty with subscription management"
+      ],
+      "context": [
+        "Using the app daily for stress, sleep, and focus",
+        "Having a long-term subscription and investment in the app",
+        "Expecting a high level of quality and performance from a popular app"
+      ],
+      "constraints": [
+        "Limited technical expertise, but willingness to troubleshoot",
+        "Dependence on the app for daily meditation and stress relief",
+        "Frustration with the app's decline in quality over time"
+      ],
+      "evidence_reviews": [
+        "f1690a55-1186-49ff-bafe-34d10ca8c7dd",
+        "58cd387c-e970-479b-8bb6-8834ddb3a55f",
+        "dbc0033f-b6ee-46b2-a008-d564166a66e7",
+        "602dc91a-0425-4137-8e1f-8373e4d6b146",
+        "4f32e0ff-a48f-413a-b22f-275e34205bdf",
+        "a2ffb9d3-eb78-4dc3-b385-2c116958676b"
+      ],
+      "generation_method": "automated",
+      "source_cluster": "kmeans_cluster_2"
+    },
+    {
+      "id": "P_auto_4",
+      "name": "Mindful Wellness Seeker",
+      "description": "A person seeking mental wellness and stress relief through meditation, with a desire for a user-friendly and effective app experience. They value guided meditations and a structured program to help them achieve their goals. They are likely tech-savvy and familiar with mobile apps.",
+      "derived_from_group": "A4",
+      "goals": [
+        "Achieve mental clarity and inner calm",
+        "Establish a consistent meditation practice",
+        "Improve overall well-being"
+      ],
+      "pain_points": [
+        "Difficulty navigating the app's interface",
+        "Lack of guidance during meditations",
+        "Inconsistent or frustrating app performance",
+        "Changes to the app's features or pricing model"
+      ],
+      "context": [
+        "Using the app for personal well-being and self-care",
+        "Expecting a user-friendly and intuitive interface",
+        "Comparing the app to other meditation and wellness tools"
+      ],
+      "constraints": [
+        "Limited time for meditation and self-care",
+        "Frustration with app performance or usability issues",
+        "Expectation of a comprehensive and structured meditation program"
+      ],
+      "evidence_reviews": [
+        "cd1c7974-a846-428b-94e0-37ecf1929d53",
+        "55d54ba3-1395-4089-80de-b09945ea3937",
+        "8c59b4ef-1372-4ff2-b965-4d931683a3f5",
+        "9e0d902b-2541-4890-b5da-17d0cce9ce87",
+        "90b69e3a-feb1-43bb-9297-a55a74420208",
+        "6805e36d-83e0-452a-94e4-f5f6264ecab2"
+      ],
+      "generation_method": "automated",
+      "source_cluster": "kmeans_cluster_3"
+    },
+    {
+      "id": "P_auto_5",
+      "name": "Mindful Meditation User",
+      "description": "A regular meditator seeking a peaceful and effective experience. They value guided meditations, tracking progress, and a calming atmosphere. They are frustrated with the evolving design and functionality of the Headspace app.",
+      "derived_from_group": "A5",
+      "goals": [
+        "Easily find and access relevant meditation content",
+        "Track progress and stay motivated",
+        "Experience a calming and distraction-free environment"
+      ],
+      "pain_points": [
+        "Confusing app UI and navigation",
+        "Inability to save or queue meditations",
+        "Poor video editing and distracting animations",
+        "Lack of control over interactiveness and customization",
+        "App crashes and technical issues"
+      ],
+      "context": [
+        "Using the app for personal meditation and relaxation",
+        "Seeking a sense of calm and focus in daily life",
+        "Comparing the app to other meditation tools and experiences"
+      ],
+      "constraints": [
+        "Limited time for meditation and relaxation",
+        "Frustration with changing app design and functionality",
+        "Need for a user-friendly and intuitive experience"
+      ],
+      "evidence_reviews": [
+        "6076cf09-e1f7-46e6-8cb3-c0290c4f3d87",
+        "4c749558-73f0-43c7-95b4-d1c2e0b5134a",
+        "3811347b-a179-4f3e-95d3-cddabed8fa10",
+        "106fc4e3-4823-482c-a57e-5dae946595b1",
+        "446c0ba9-cac8-4d20-ae46-1337e3132839",
+        "d485676d-45c6-4ff1-b8be-7795bcce79f2"
+      ],
+      "generation_method": "automated",
+      "source_cluster": "kmeans_cluster_4"
+    }
+  ]
+}

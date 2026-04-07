@@ -2,12 +2,118 @@
   "groups": [
     {
       "group_id": "A1",
-      "theme": "Workout logging issues",
-      "review_ids": ["rev_12", "rev_33", "rev_41", "rev_92"],
+      "theme": "Technical Issues and Frustrations",
+      "review_ids": [
+        "209e1415-acc1-4e84-82fd-9d958d60eb5b",
+        "ad2a3d1f-5f88-4768-83f0-21100f386bbb",
+        "28fbe2b5-ef91-440c-b6b7-e4955e74ddcf",
+        "ca923315-d7c8-4d15-81ae-6e9d927827c1",
+        "09d92e1c-ccca-4cc9-bb5a-869c92a871de",
+        "15a9e967-0628-4916-bada-513c34eea2bc",
+        "66718909-3df2-4e39-b9bc-edee3eae1cd5",
+        "3aae0146-e8ee-49d2-aba5-e9b4961b8e4d",
+        "7b037240-503c-4005-a384-c04c5a49dd06",
+        "a473d694-5688-4f59-a859-51601a28ff18"
+      ],
       "example_reviews": [
-        "The app crashes whenever I try to log a run.",
-        "Logging workouts causes the app to freeze."
-      ]
+        "was really skeptical of these types of \"meditation apps\" but a subscription came included with my health plan, so i figured why not. As someone who deals with an anxiety disorder, I was very pleasantly surprised. The exercises aren't pretentious, they don't rely on simply calming music, and they are very approachable and practical. There are exercises for post workout, after or during work hours, helping you fall asleep, grounding methods while you're having a panic attack - all sorts of stuff.",
+        "My daughter loves this app and uses it every night to fall asleep, but BEWARE! Last month, the app used over 5GB of data in one evening, even though we keep our mobile data setting turned off. we subscribe to data on that device since it is always connected to wifi, so it resulted in $60 of extra charges! A quick search revealed that Leads pace can suffer glitches which result in excessive amounts of data being used in the background. if you use this app, make sure you don't have data limits."
+      ],
+      "cluster_rationale": "The reviews share complaints and frustrations with technical issues such as bugs, crashes, data usage, and subscription recognition problems.",
+      "source_cluster": "kmeans_cluster_0",
+      "cluster_size": 22
+    },
+    {
+      "group_id": "A2",
+      "theme": "Frustration with monetization and paywall",
+      "review_ids": [
+        "c62ac4d7-42c9-45eb-97b6-63d0968f19df",
+        "136a6c04-3565-49ce-a437-048148584a6b",
+        "b5b3dafb-658d-400a-b067-1b5a702ee1ad",
+        "50acc9da-7d1c-40bd-a31f-b72efd7203f3",
+        "36b38d2b-cf3d-4532-b87a-d25d7faed97e",
+        "5c31601a-69e7-471b-a81d-a50685ab62bf",
+        "7ee467eb-941f-41e3-b338-9f77b60b0945",
+        "2bbb9f86-a110-499f-9a3c-3b66446d6407",
+        "0742dc6d-9a9e-4cf9-b33c-409d4dc96839",
+        "60b0b61e-fcc5-42ba-a90f-40adab0539e2"
+      ],
+      "example_reviews": [
+        "Went to through process of cancelling my trial in app. Asked me the reason for cancelling, out of curiosity I chose too expensive. Offered me a year for $34. Why not just charge $34 to begin with, what a scam! After refusing, I continued and cancelled. I was then told I had to go to the GooglePlay store to cancel. I didn't see a subscriptions in my GP so I thought it was cancelled. Turns out it was active through one of my old accounts and they charged me the $74 and I can't get a refund! SCAM!!",
+        "A few years ago, I had this app and at that time it was free and incredibly relaxing for me as a young teenager. However, although the app has now become very pleasing to look at and use, and there is so much nuance in the meditations they create and the topics they discuss, none of it is available unless you pay for it. Although I understand completely that they need to be able to create income, there should at least be one or two free meditations, especially if they want to grow their audience"
+      ],
+      "cluster_rationale": "The reviews share a common criticism of Headspace's business model, specifically the frustration with the app's paywall and the perception that it prioritizes profit over user access to meditation content.",
+      "source_cluster": "kmeans_cluster_1",
+      "cluster_size": 51
+    },
+    {
+      "group_id": "A3",
+      "theme": "Frustration with App Bugs and Errors",
+      "review_ids": [
+        "f1690a55-1186-49ff-bafe-34d10ca8c7dd",
+        "58cd387c-e970-479b-8bb6-8834ddb3a55f",
+        "dbc0033f-b6ee-46b2-a008-d564166a66e7",
+        "602dc91a-0425-4137-8e1f-8373e4d6b146",
+        "4f32e0ff-a48f-413a-b22f-275e34205bdf",
+        "a2ffb9d3-eb78-4dc3-b385-2c116958676b",
+        "7918b0b4-bd70-42e2-b7fc-a9eaa372b38b",
+        "cf869d5e-3c5d-4cc2-a7bd-86d5d01e75b4",
+        "e03d1c15-fdc6-41a0-8f48-6db775079799",
+        "45fb9b4a-afa4-43ec-8ccc-0a76cad28738"
+      ],
+      "example_reviews": [
+        "With this latest update nothing is working, UI is worse. \"Something went wrong\" 2 minutes into meditation. \"Something went wrong\" I love the meditations in this app, the Sleepcasts always work for me, I've never been awake at the end of any of them. BUT there isn't much more frustrating then listening to a sleepcast, just dozing off, to find out has stopped, I have to turn on phone put on glasses to find those dreaded 3 words \"Something went wrong\" - even on content I've downloaded. Please fix!",
+        "I've used headspace for several years. in the last single year it has become the most error ridden sad excuse of an app. it's almost ironic. I've done all of the possible troubleshooting and the app insists I have no connection. It stops in the middle of a meditation saying it lost service. you don't know this until you open your eyes to look at the app. Opening the app used to take 2-3 seconds. now it takes 20-30 and that's if it even loads! I even pre-download meditations and it STILL errors."
+      ],
+      "cluster_rationale": "The reviews share a common complaint about the Headspace app's recent updates causing bugs, errors, and crashes, disrupting the user's experience.",
+      "source_cluster": "kmeans_cluster_2",
+      "cluster_size": 92
+    },
+    {
+      "group_id": "A4",
+      "theme": "Evolving App Experience and User Expectations",
+      "review_ids": [
+        "cd1c7974-a846-428b-94e0-37ecf1929d53",
+        "55d54ba3-1395-4089-80de-b09945ea3937",
+        "8c59b4ef-1372-4ff2-b965-4d931683a3f5",
+        "9e0d902b-2541-4890-b5da-17d0cce9ce87",
+        "90b69e3a-feb1-43bb-9297-a55a74420208",
+        "6805e36d-83e0-452a-94e4-f5f6264ecab2",
+        "dfa74585-9e81-4ab5-8db8-a7673ac394b2",
+        "8896d1be-9caf-4c06-b7e7-c1a2d407d4b2",
+        "54fe829b-2b32-4bd9-a337-c47fe2c53f96",
+        "f21ed601-830d-4a96-923c-ba38e68102c2"
+      ],
+      "example_reviews": [
+        "guidance is lacking. the body scans are free style on your own. It tells you where to start and stop but doesn't give guidance along the way to keep you on track. Just start at the top of the head and work your way down to the toes with silence in-between, which for me sets me up for failure, and my mind instantly wonders or I zoom through the scan and the voice guidance pops in saying you should be at the shoulder when I've already gotten to the knees. A bit more verbal guidance would be great.",
+        "Headspace has drastically improved my mental well-being over the past 2 weeks, I am amazed how easy it has been with the programs to adapt it into my daily life. Agreed with the rest of the reviews,the interface needs a lot of work, it is hard to navigate through programs & search engine can be improved. Overall the content is amazing, well worth the sub, never hurts to invest in yourself. I hope that others also find their way with this app. Thanks to the creators for providing quality programs"
+      ],
+      "cluster_rationale": "The reviews share a common thread of users expressing mixed feelings about the changes and developments in the Headspace app over time, impacting their experience and expectations.",
+      "source_cluster": "kmeans_cluster_3",
+      "cluster_size": 74
+    },
+    {
+      "group_id": "A5",
+      "theme": "Frustration with Evolving App Design and Functionality",
+      "review_ids": [
+        "6076cf09-e1f7-46e6-8cb3-c0290c4f3d87",
+        "4c749558-73f0-43c7-95b4-d1c2e0b5134a",
+        "3811347b-a179-4f3e-95d3-cddabed8fa10",
+        "106fc4e3-4823-482c-a57e-5dae946595b1",
+        "446c0ba9-cac8-4d20-ae46-1337e3132839",
+        "d485676d-45c6-4ff1-b8be-7795bcce79f2",
+        "9876f395-afa9-4750-a47d-559f67eddc63",
+        "3f0fd700-63a6-4e95-8d22-2dff744ab908",
+        "11710b66-b1b1-4f69-887d-50c3e23b0eeb",
+        "d65484df-ddee-41b5-8988-7a4c8e602074"
+      ],
+      "example_reviews": [
+        "It's one of the better meditation apps out there, Love a lot of the content. Unfortunately the UI is too confusing these days. I can't see the full description of sleep casts before checking. It's hard to save meditations and view favourites. I clicked on a meditation course out of curiousity and now it seems pinned to my homepage, I find the content triggering and it's not easy to remove. I wish you could skip ahead/back in meditations. There's also a lot of gimmicks, like the Star Wars content",
+        "One of a kind. great app. AI good afternoon, but I need more control of interactiveness in the app. Love the daily schedule for Morning/afternoon, and Sleep. Visually calming. Easy to find what I need, but would like to be able to add them to my DAILY TASK so don't have to find them each time, Choose what task videos are in my DAILY list, INSTEAD of the app choosing it. A NOTIFICATION 4 each task, Instead of only having 1 a day! More prompts how too & let me control what to do next in daily page"
+      ],
+      "cluster_rationale": "The reviews share a common thread of users expressing frustration with changes to the app's design and functionality over time, citing difficulties with navigation, content accessibility, and missing features.",
+      "source_cluster": "kmeans_cluster_4",
+      "cluster_size": 61
     }
   ]
 }

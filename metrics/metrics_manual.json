@@ -1,11 +1,18 @@
-{"pipeline": "manual",
-"dataset_size": 300,
-"persona_count": 4,
-"requirements_count": 8,
-"tests_count": 10,
-"traceability_links": 12,
-"review_coverage": 0.63,
-"traceability_ratio": 0.87,
-"testability_rate": 0.75,
-"ambiguity_ratio": 0.12
+{
+  "pipeline": "manual",
+  "dataset_size": 4538,
+  "persona_count": 5,
+  "requirements_count": 14,
+  "tests_count": 28,
+  "traceability_links": 107,
+  "traceability_links_breakdown": {
+    "review_to_group": 60,
+    "group_to_persona": 5,
+    "persona_to_req": 14,
+    "req_to_test": 28
+  },
+  "review_coverage": 0.7539,
+  "traceability_ratio": 1.0,
+  "testability_rate": 1.0,
+  "ambiguity_ratio": 0.0714
 }

@@ -1,13 +1,109 @@
-{  "groups": [
+{
+  "groups": [
     {
       "group_id": "H1",
-      "theme": "Workout logging failures during activity tracking",
-      "review_ids": ["rev_12", "rev_33", "rev_41", "rev_92"],
-      "example_reviews": [
-        "The app crashes whenever I try to log a run.",
-        "Logging workouts causes the app to freeze."
+      "theme": "Pricing clarity and usable free access",
+      "review_ids": [
+        "c62ac4d7-42c9-45eb-97b6-63d0968f19df",
+        "136a6c04-3565-49ce-a437-048148584a6b",
+        "b5b3dafb-658d-400a-b067-1b5a702ee1ad",
+        "50acc9da-7d1c-40bd-a31f-b72efd7203f3",
+        "36b38d2b-cf3d-4532-b87a-d25d7faed97e",
+        "5c31601a-69e7-471b-a81d-a50685ab62bf",
+        "7ee467eb-941f-41e3-b338-9f77b60b0945",
+        "2bbb9f86-a110-499f-9a3c-3b66446d6407",
+        "0742dc6d-9a9e-4cf9-b33c-409d4dc96839",
+        "60b0b61e-fcc5-42ba-a90f-40adab0539e2"
       ],
-      "notes": "Removed one unrelated review about login problems from the original automated group."
+      "example_reviews": [
+        "Went through the trial cancellation flow and still got charged later.",
+        "The app looks good, but almost everything is behind a paywall."
+      ],
+      "notes": "Refined the automated monetization group to focus on paywall clarity, trial terms, and free-tier access."
+    },
+    {
+      "group_id": "H2",
+      "theme": "Playback failures and app instability",
+      "review_ids": [
+        "f1690a55-1186-49ff-bafe-34d10ca8c7dd",
+        "58cd387c-e970-479b-8bb6-8834ddb3a55f",
+        "dbc0033f-b6ee-46b2-a008-d564166a66e7",
+        "602dc91a-0425-4137-8e1f-8373e4d6b146",
+        "4f32e0ff-a48f-413a-b22f-275e34205bdf",
+        "a2ffb9d3-eb78-4dc3-b385-2c116958676b",
+        "7918b0b4-bd70-42e2-b7fc-a9eaa372b38b",
+        "cf869d5e-3c5d-4cc2-a7bd-86d5d01e75b4",
+        "e03d1c15-fdc6-41a0-8f48-6db775079799",
+        "45fb9b4a-afa4-43ec-8ccc-0a76cad28738"
+      ],
+      "example_reviews": [
+        "Sessions stop with a 'Something went wrong' message in the middle.",
+        "The app takes too long to load and still errors even after downloads."
+      ],
+      "notes": "Kept the automated bug cluster but narrowed it to session stability, loading, and playback interruptions."
+    },
+    {
+      "group_id": "H3",
+      "theme": "Login recovery and subscription restoration",
+      "review_ids": [
+        "15fe4b34-503e-4209-905f-1ebf4f5af7e7",
+        "c495cc99-e06b-4e6f-a3a5-15caa838bbc2",
+        "2b18ee9b-5580-4344-ae9f-6af752ed723a",
+        "b1e748f3-ceb4-458d-8379-4122958619e8",
+        "4fe50ba1-e06d-4027-b7d3-7bfeaeaed582",
+        "03541f5e-c81c-412f-a4fa-a4abeaa10feb",
+        "7dfc3626-8a47-4d6e-84ad-6a0d9dad117c",
+        "4199e009-3e46-4483-bf7b-c2839055abc7",
+        "82f630f4-552b-44bf-86d8-4b2825ea0cca",
+        "8687ae38-0f81-4462-bc77-b204e3a12b49"
+      ],
+      "example_reviews": [
+        "After reinstalling or switching devices, access does not come back properly.",
+        "The app gets stuck in sign-in problems and support is not helpful."
+      ],
+      "notes": "Corrected the automated outputs by restoring a clear login and account-recovery group from the review evidence."
+    },
+    {
+      "group_id": "H4",
+      "theme": "Search, navigation, and resume friction",
+      "review_ids": [
+        "6076cf09-e1f7-46e6-8cb3-c0290c4f3d87",
+        "4c749558-73f0-43c7-95b4-d1c2e0b5134a",
+        "3811347b-a179-4f3e-95d3-cddabed8fa10",
+        "106fc4e3-4823-482c-a57e-5dae946595b1",
+        "446c0ba9-cac8-4d20-ae46-1337e3132839",
+        "d485676d-45c6-4ff1-b8be-7795bcce79f2",
+        "9876f395-afa9-4750-a47d-559f67eddc63",
+        "3f0fd700-63a6-4e95-8d22-2dff744ab908",
+        "11710b66-b1b1-4f69-887d-50c3e23b0eeb",
+        "d65484df-ddee-41b5-8988-7a4c8e602074"
+      ],
+      "example_reviews": [
+        "It is hard to save meditations and find them again later.",
+        "Courses and recommended content get pinned in confusing ways."
+      ],
+      "notes": "Refined the automated design/functionality group to focus on findability, resume paths, and saved content."
+    },
+    {
+      "group_id": "H5",
+      "theme": "Progress tracking and routine support",
+      "review_ids": [
+        "cd1c7974-a846-428b-94e0-37ecf1929d53",
+        "55d54ba3-1395-4089-80de-b09945ea3937",
+        "8c59b4ef-1372-4ff2-b965-4d931683a3f5",
+        "9e0d902b-2541-4890-b5da-17d0cce9ce87",
+        "90b69e3a-feb1-43bb-9297-a55a74420208",
+        "6805e36d-83e0-452a-94e4-f5f6264ecab2",
+        "dfa74585-9e81-4ab5-8db8-a7673ac394b2",
+        "8896d1be-9caf-4c06-b7e7-c1a2d407d4b2",
+        "54fe829b-2b32-4bd9-a337-c47fe2c53f96",
+        "f21ed601-830d-4a96-923c-ba38e68102c2"
+      ],
+      "example_reviews": [
+        "Users want clearer guidance and more structure in their practice.",
+        "The interface and progress experience should help habits, not get in the way."
+      ],
+      "notes": "Refined the broader user-expectation group into a habit-building and progress-visibility theme."
     }
   ]
 }

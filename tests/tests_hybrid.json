@@ -3,14 +3,222 @@
     {
       "test_id": "T_hybrid_1",
       "requirement_id": "FR_hybrid_1",
-      "scenario": "Save a workout entry without crashing",
+      "scenario": "Pricing is visible before account creation on first launch",
       "steps": [
-        "Open the workout logging feature",
-        "Enter workout information",
-        "Submit the workout"
+        "Install Headspace on a clean Android device.",
+        "Open the app for the first time.",
+        "Observe the first subscription or onboarding screen without creating an account."
       ],
-      "expected_result": "The workout is saved successfully and the application does not crash.",
-      "notes": "Revised the expected result to match the updated hybrid requirement."
+      "expected_result": "Plan prices, billing frequency, and trial terms are visible before any account or payment prompt."
+    },
+    {
+      "test_id": "T_hybrid_2",
+      "requirement_id": "FR_hybrid_1",
+      "scenario": "Trial terms stay visible before payment details are requested",
+      "steps": [
+        "Open the app as a first-time user.",
+        "Move to the subscription selection screen.",
+        "Stop before entering any payment information."
+      ],
+      "expected_result": "Trial length and renewal terms are still shown before payment details are requested."
+    },
+    {
+      "test_id": "T_hybrid_3",
+      "requirement_id": "FR_hybrid_2",
+      "scenario": "Guest user can play at least ten free sessions",
+      "steps": [
+        "Open the app without starting a subscription or trial.",
+        "Browse the meditation library.",
+        "Count the full sessions that can be played immediately."
+      ],
+      "expected_result": "At least 10 complete guided meditation sessions are playable without subscription or payment information."
+    },
+    {
+      "test_id": "T_hybrid_4",
+      "requirement_id": "FR_hybrid_2",
+      "scenario": "Free sessions are clearly labeled in the library",
+      "steps": [
+        "Open the library without signing up for paid access.",
+        "Identify sessions that are playable right away.",
+        "Compare them to locked items."
+      ],
+      "expected_result": "Playable free items are clearly labeled and visually distinct from locked content."
+    },
+    {
+      "test_id": "T_hybrid_5",
+      "requirement_id": "FR_hybrid_3",
+      "scenario": "Meditation session completes without interruption",
+      "steps": [
+        "Start a guided meditation session.",
+        "Let it play through the middle portion of the session.",
+        "Monitor the app until the session ends."
+      ],
+      "expected_result": "The session plays without an unexpected crash, freeze, or stop event."
+    },
+    {
+      "test_id": "T_hybrid_6",
+      "requirement_id": "FR_hybrid_3",
+      "scenario": "Sleep session remains stable while app is in normal use",
+      "steps": [
+        "Start a sleep cast session.",
+        "Lock the screen and leave the device in normal playback use.",
+        "Check whether playback continues as expected."
+      ],
+      "expected_result": "Playback continues without the app crashing, freezing, or stopping unexpectedly."
+    },
+    {
+      "test_id": "T_hybrid_7",
+      "requirement_id": "FR_hybrid_4",
+      "scenario": "Session loads within five seconds on normal connection",
+      "steps": [
+        "Connect the device to Wi-Fi or LTE.",
+        "Select a meditation session.",
+        "Measure the time until playback is ready."
+      ],
+      "expected_result": "Playback is ready within 5 seconds."
+    },
+    {
+      "test_id": "T_hybrid_8",
+      "requirement_id": "FR_hybrid_4",
+      "scenario": "Loading indicator appears when session takes longer than expected",
+      "steps": [
+        "Throttle the connection speed on a supported device.",
+        "Select a meditation or sleep session.",
+        "Watch the screen until playback begins."
+      ],
+      "expected_result": "A visible loading indicator is shown until playback is ready if the session does not load within 5 seconds."
+    },
+    {
+      "test_id": "T_hybrid_9",
+      "requirement_id": "FR_hybrid_5",
+      "scenario": "OAuth sign-in returns directly to the app",
+      "steps": [
+        "Open the login screen in Headspace.",
+        "Choose a supported OAuth sign-in option such as Google.",
+        "Complete the external authentication step."
+      ],
+      "expected_result": "The app regains focus automatically and signs the user in without showing the login screen again."
+    },
+    {
+      "test_id": "T_hybrid_10",
+      "requirement_id": "FR_hybrid_5",
+      "scenario": "Returning user does not hit a login loop after OAuth success",
+      "steps": [
+        "Open Headspace with an expired session.",
+        "Use OAuth sign-in and complete authentication.",
+        "Observe the screen flow after authentication."
+      ],
+      "expected_result": "The user is taken into the app and is not returned to the login prompt."
+    },
+    {
+      "test_id": "T_hybrid_11",
+      "requirement_id": "FR_hybrid_6",
+      "scenario": "Subscription access restores on a second device",
+      "steps": [
+        "Confirm the account has paid access on Device A.",
+        "Install Headspace on Device B.",
+        "Sign in with the same account on Device B."
+      ],
+      "expected_result": "Paid access is restored on Device B without asking for a new subscription."
+    },
+    {
+      "test_id": "T_hybrid_12",
+      "requirement_id": "FR_hybrid_6",
+      "scenario": "Progress data restores after device migration",
+      "steps": [
+        "Record the user's progress data on Device A.",
+        "Sign in with the same account on Device B.",
+        "Open the progress view on Device B."
+      ],
+      "expected_result": "Previously recorded progress is visible on Device B after sign-in."
+    },
+    {
+      "test_id": "T_hybrid_13",
+      "requirement_id": "FR_hybrid_7",
+      "scenario": "Global search returns cross-category results within two seconds",
+      "steps": [
+        "Sign in to Headspace.",
+        "Open global search from the main navigation.",
+        "Search for a keyword such as 'sleep'."
+      ],
+      "expected_result": "Relevant results from meditations, sleep casts, and courses appear within 2 seconds."
+    },
+    {
+      "test_id": "T_hybrid_14",
+      "requirement_id": "FR_hybrid_7",
+      "scenario": "User can open a search result directly from the results list",
+      "steps": [
+        "Run a search in the global search field.",
+        "Wait for the results list to appear.",
+        "Tap one of the returned results."
+      ],
+      "expected_result": "The selected content opens directly from the search results list."
+    },
+    {
+      "test_id": "T_hybrid_15",
+      "requirement_id": "FR_hybrid_8",
+      "scenario": "Single in-progress course appears in Continue section",
+      "steps": [
+        "Start but do not finish a multi-session course.",
+        "Return to the home screen.",
+        "Inspect the Continue section."
+      ],
+      "expected_result": "The in-progress course appears in Continue with title, completion percentage, and a resume action."
+    },
+    {
+      "test_id": "T_hybrid_16",
+      "requirement_id": "FR_hybrid_8",
+      "scenario": "Multiple in-progress items all appear in Continue section",
+      "steps": [
+        "Start two different multi-session programs without finishing them.",
+        "Return to the home screen.",
+        "Count the items shown in Continue."
+      ],
+      "expected_result": "Each in-progress item is listed in Continue with its next session and completion percentage."
+    },
+    {
+      "test_id": "T_hybrid_17",
+      "requirement_id": "FR_hybrid_9",
+      "scenario": "Minutes and streak update on session completion screen",
+      "steps": [
+        "Record the current minutes and streak values.",
+        "Complete a meditation session.",
+        "Check the session completion screen."
+      ],
+      "expected_result": "The completion screen shows updated total minutes meditated and the current streak."
+    },
+    {
+      "test_id": "T_hybrid_18",
+      "requirement_id": "FR_hybrid_9",
+      "scenario": "Same progress values appear again on the home screen",
+      "steps": [
+        "Finish a session and note the updated values.",
+        "Return to the home screen.",
+        "Check the visible progress area."
+      ],
+      "expected_result": "The same updated minutes and streak values are visible on the home screen."
+    },
+    {
+      "test_id": "T_hybrid_19",
+      "requirement_id": "FR_hybrid_10",
+      "scenario": "Saved item can be reached from the saved-content area",
+      "steps": [
+        "Open a meditation or sleep item.",
+        "Save the item.",
+        "Navigate to the saved-content area."
+      ],
+      "expected_result": "The saved item appears in the saved-content area."
+    },
+    {
+      "test_id": "T_hybrid_20",
+      "requirement_id": "FR_hybrid_10",
+      "scenario": "Saved item is reachable within two steps from home",
+      "steps": [
+        "Save a meditation item.",
+        "Return to the home screen.",
+        "Navigate from home to the saved-content area and open the saved item."
+      ],
+      "expected_result": "The user can reach the saved item within 2 navigation steps from the home screen."
     }
   ]
 }

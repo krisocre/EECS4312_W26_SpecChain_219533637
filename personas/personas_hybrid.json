@@ -2,30 +2,168 @@
   "personas": [
     {
       "id": "P_hybrid_1",
-      "name": "Frequent Fitness Logger",
-      "description": "A user who depends on the app for regular workout tracking and expects logging to work reliably during or immediately after exercise.",
+      "name": "Price-Conscious Explorer",
+      "description": "A user who wants to try Headspace before paying, but gets frustrated when pricing details are hidden, trial terms are confusing, or the free tier is too limited to judge the app properly.",
       "derived_from_group": "H1",
       "goals": [
-        "Log workouts quickly",
-        "Track activities without interruption"
+        "Understand pricing before committing",
+        "Try enough free content to judge the app",
+        "Avoid unexpected charges"
       ],
       "pain_points": [
-        "The app crashes while saving workouts",
-        "Previously entered activity data may disappear"
+        "Paywall appears too early",
+        "Trial and cancellation terms are unclear",
+        "Too little free content is available"
       ],
       "context": [
-        "Using the app during exercise sessions",
-        "Using the app outdoors or while moving"
+        "Usually arrives as a new user",
+        "Often compares the app against free alternatives",
+        "Makes quick decisions based on cost and clarity"
       ],
       "constraints": [
-        "Workout logging must complete without crashing",
-        "Saved workout data must persist"
+        "Needs pricing before account creation",
+        "Does not want to enter payment information just to evaluate the app",
+        "Needs a small but usable free tier"
       ],
       "evidence_reviews": [
-        "rev_12",
-        "rev_41"
+        "c62ac4d7-42c9-45eb-97b6-63d0968f19df",
+        "136a6c04-3565-49ce-a437-048148584a6b",
+        "b5b3dafb-658d-400a-b067-1b5a702ee1ad",
+        "50acc9da-7d1c-40bd-a31f-b72efd7203f3"
       ],
-      "notes": "Refined the persona description and removed an unsupported assumption about synchronization."
+      "notes": "Refined from automated monetization outputs to remove vague claims and keep only review-supported details."
+    },
+    {
+      "id": "P_hybrid_2",
+      "name": "Interrupted Daily Listener",
+      "description": "A regular user who depends on Headspace for daily meditation or sleep content and expects sessions to start quickly and finish without crashes, freezing, or unexpected playback failures.",
+      "derived_from_group": "H2",
+      "goals": [
+        "Start sessions quickly",
+        "Finish sessions without interruption",
+        "Trust the app during daily use"
+      ],
+      "pain_points": [
+        "Sessions stop mid-playback",
+        "Loading times are long",
+        "Downloads do not always prevent errors"
+      ],
+      "context": [
+        "Often uses the app before sleep or during stress",
+        "Relies on playback stability more than advanced features",
+        "Has likely used the app long enough to notice regressions"
+      ],
+      "constraints": [
+        "Needs the app to stay stable during long audio sessions",
+        "Needs clear recovery when interruptions happen",
+        "Has limited patience for repeated troubleshooting"
+      ],
+      "evidence_reviews": [
+        "f1690a55-1186-49ff-bafe-34d10ca8c7dd",
+        "58cd387c-e970-479b-8bb6-8834ddb3a55f",
+        "dbc0033f-b6ee-46b2-a008-d564166a66e7",
+        "602dc91a-0425-4137-8e1f-8373e4d6b146"
+      ],
+      "notes": "Refined from the automated bug cluster to make the persona more focused and testable."
+    },
+    {
+      "id": "P_hybrid_3",
+      "name": "Locked-Out Subscriber",
+      "description": "A paying or previously paying user who expects to sign in and get access back immediately, but runs into login loops, missing entitlements, or unclear failure messages after reinstalling or changing devices.",
+      "derived_from_group": "H3",
+      "goals": [
+        "Sign in on the first try",
+        "Restore paid access and history",
+        "Get a clear recovery path when authentication fails"
+      ],
+      "pain_points": [
+        "Login flows do not finish cleanly",
+        "Subscription status does not always restore",
+        "Error messages are too generic to act on"
+      ],
+      "context": [
+        "Often returning after reinstalling or moving to a new device",
+        "May use Google sign-in or benefit-linked access",
+        "Needs access back quickly because the app is part of a routine"
+      ],
+      "constraints": [
+        "Cannot afford a repeated login loop",
+        "Needs historical data and access restored automatically",
+        "Needs error messages that explain what to do next"
+      ],
+      "evidence_reviews": [
+        "15fe4b34-503e-4209-905f-1ebf4f5af7e7",
+        "c495cc99-e06b-4e6f-a3a5-15caa838bbc2",
+        "2b18ee9b-5580-4344-ae9f-6af752ed723a",
+        "82f630f4-552b-44bf-86d8-4b2825ea0cca"
+      ],
+      "notes": "This hybrid persona restores an important missing user type that the automated outputs blurred with general technical complaints."
+    },
+    {
+      "id": "P_hybrid_4",
+      "name": "Overwhelmed Navigator",
+      "description": "A frequent user who likes the content but wastes time trying to find saved items, return to in-progress content, or understand where to tap next after interface changes.",
+      "derived_from_group": "H4",
+      "goals": [
+        "Find specific content quickly",
+        "Resume in-progress content easily",
+        "Keep favorite content within reach"
+      ],
+      "pain_points": [
+        "Saved content is hard to relocate",
+        "Continue paths are inconsistent",
+        "Navigation changes increase friction"
+      ],
+      "context": [
+        "Often returns to the same content categories",
+        "Uses the app in short available moments",
+        "Feels the friction most when time is limited"
+      ],
+      "constraints": [
+        "Needs search from core navigation",
+        "Needs a clear continue/resume area",
+        "Needs saved content to stay easy to reach"
+      ],
+      "evidence_reviews": [
+        "6076cf09-e1f7-46e6-8cb3-c0290c4f3d87",
+        "4c749558-73f0-43c7-95b4-d1c2e0b5134a",
+        "3811347b-a179-4f3e-95d3-cddabed8fa10",
+        "106fc4e3-4823-482c-a57e-5dae946595b1"
+      ],
+      "notes": "Refined from the automated design/functionality group to focus on findability and resume tasks."
+    },
+    {
+      "id": "P_hybrid_5",
+      "name": "Habit-Building Meditator",
+      "description": "A user trying to build a steady mindfulness routine and wanting the app to make progress, guidance, and daily practice support more visible and reliable.",
+      "derived_from_group": "H5",
+      "goals": [
+        "See progress clearly",
+        "Maintain a regular routine",
+        "Feel guided instead of lost"
+      ],
+      "pain_points": [
+        "Progress is not always surfaced clearly",
+        "Routine support feels inconsistent",
+        "The app experience can feel less structured than expected"
+      ],
+      "context": [
+        "Uses the app for self-care and consistency",
+        "Wants quick confirmation that sessions count toward progress",
+        "Values guidance and structure in the interface"
+      ],
+      "constraints": [
+        "Needs progress updates right after sessions",
+        "Needs the home screen to support routine building",
+        "Needs simple, visible feedback instead of extra searching"
+      ],
+      "evidence_reviews": [
+        "cd1c7974-a846-428b-94e0-37ecf1929d53",
+        "55d54ba3-1395-4089-80de-b09945ea3937",
+        "8c59b4ef-1372-4ff2-b965-4d931683a3f5",
+        "9e0d902b-2541-4890-b5da-17d0cce9ce87"
+      ],
+      "notes": "Refined from the automated expectations group to keep only routine, guidance, and progress-related themes."
     }
   ]
 }

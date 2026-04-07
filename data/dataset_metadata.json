@@ -1,0 +1,16 @@
+{
+    "app_name": "Headspace: Mindful Meditation",
+    "package_id": "com.getsomeheadspace.android",
+    "dataset_size_raw": 5000,
+    "dataset_size_clean": 4538,
+    "collection_method": "Automated scraping using the 'google-play-scraper' Python library, targeting the newest reviews.",
+    "cleaning_decisions": [
+        "Removed duplicate reviews based on text content.",
+        "Filtered out reviews with fewer than 3 words after preprocessing to ensure quality.",
+        "Converted all numeric values (e.g., '5') to text (e.g., 'five') using num2words.",
+        "Standardized text via lowercase conversion and punctuation removal.",
+        "Applied NLTK WordNetLemmatizer to reduce words to their dictionary base forms.",
+        "Removed standard English stop words to focus on sentiment-bearing terms."
+    ],
+    "limitations_note": "No limitation"
+}

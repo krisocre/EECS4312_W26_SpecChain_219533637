@@ -1,16 +1,321 @@
-
 {
-  "tests": [
-    {
-      "test_id": "T_auto_1",
-      "requirement_id": "FR1",
-      "scenario": "Workout Logging Stability",
-      "steps": [
-        "Open the workout logging screen",
-        "Enter workout details",
-        "Submit the workout"
-      ],
-      "expected_result": "The workout is saved successfully and the application remains stable."
-    }
-  ]
+    "tests": [{
+            "test_id": "T1_a",
+            "requirement_id": "FR1",
+            "scenario": "Pricing visible before account creation on first launch",
+            "steps": [
+                "Install the Headspace app on a clean Android device with no existing account",
+                "Open the app for the first time",
+                "Observe the initial screens without creating an account or providing any personal information"
+            ],
+            "expected_result": "The app displays all available subscription plan names, prices, and billing frequencies (e.g., monthly, annual) before any account creation screen or personal information prompt is shown."
+        },
+        {
+            "test_id": "T1_b",
+            "requirement_id": "FR1",
+            "scenario": "Pricing information complete and not hidden behind interaction",
+            "steps": [
+                "Open the app without signing in",
+                "Navigate to any screen that mentions subscription plans",
+                "Record all plan options and prices displayed without tapping 'Subscribe' or entering payment details"
+            ],
+            "expected_result": "All plan tiers (e.g., monthly, annual, student) with their associated prices are visible and legible without requiring the user to initiate a purchase flow or provide any personal information."
+        },
+        {
+            "test_id": "T2_a",
+            "requirement_id": "FR2",
+            "scenario": "No charge applied during an active free trial",
+            "steps": [
+                "Create a new account and start a 14-day free trial using a test payment method",
+                "Check the payment method for charges on day 1, day 7, and day 13 of the trial",
+                "Verify no charge has been applied before day 14"
+            ],
+            "expected_result": "No charge is applied to the payment method on any day before the trial period expires. The payment method shows $0 billed during the trial window."
+        },
+        {
+            "test_id": "T2_b",
+            "requirement_id": "FR2",
+            "scenario": "Trial countdown visible in-app throughout the trial period",
+            "steps": [
+                "Start a free trial and log into the app",
+                "Navigate to the account or subscription settings section",
+                "Note the remaining trial days displayed on day 1 and repeat observation on day 5"
+            ],
+            "expected_result": "The app displays the number of remaining trial days prominently within the account or subscription screen. The count decrements accurately day by day (e.g., '13 days remaining' on day 1, '8 days remaining' on day 6)."
+        },
+        {
+            "test_id": "T3_a",
+            "requirement_id": "FR3",
+            "scenario": "In-app renewal notification appears at least 72 hours before charge",
+            "steps": [
+                "Set up an account with an annual subscription scheduled to renew in 3 days",
+                "Open the app 72 hours before the renewal date",
+                "Check for any in-app notification or banner related to the upcoming renewal"
+            ],
+            "expected_result": "The app displays a visible in-app notification or banner informing the user that their subscription will renew in 3 days and stating the renewal amount. The notification is present at or before the 72-hour threshold."
+        },
+        {
+            "test_id": "T3_b",
+            "requirement_id": "FR3",
+            "scenario": "In-app notification displayed when subscription price has changed",
+            "steps": [
+                "Simulate a price increase on an existing annual subscription (test environment)",
+                "Open the app before the next renewal date",
+                "Observe whether any notification about the price change is displayed"
+            ],
+            "expected_result": "The app displays an in-app notification stating the new subscription price and its effective date, giving the user the opportunity to cancel before being charged the new amount."
+        },
+        {
+            "test_id": "T4_a",
+            "requirement_id": "FR4",
+            "scenario": "Application does not crash during a full 10-minute meditation session",
+            "steps": [
+                "Log in to an active subscriber account",
+                "Select and start a 10-minute guided meditation session",
+                "Allow the session to play from start to finish without interacting with the screen",
+                "Observe the app state throughout the session"
+            ],
+            "expected_result": "The application remains running throughout the full 10-minute session. No crash, freeze, or unexpected termination occurs. The session completion screen is displayed at the end."
+        },
+        {
+            "test_id": "T4_b",
+            "requirement_id": "FR4",
+            "scenario": "Session progress is preserved and resume is offered after an unexpected crash",
+            "steps": [
+                "Start a 20-minute sleep cast session and allow it to play until the 50% mark (approximately 10 minutes)",
+                "Simulate a forced crash by terminating the application process via Android developer settings",
+                "Reopen the Headspace app"
+            ],
+            "expected_result": "Upon reopening, the app displays a prompt or banner offering to resume the sleep cast from the point at which it was interrupted (approximately 10 minutes in). Selecting 'Resume' starts playback from that position."
+        },
+        {
+            "test_id": "T5_a",
+            "requirement_id": "FR5",
+            "scenario": "Session begins playing within 5 seconds on LTE connection",
+            "steps": [
+                "Connect the test device to an LTE mobile network (not Wi-Fi)",
+                "Log in and navigate to any meditation session",
+                "Tap the session and start a stopwatch simultaneously",
+                "Stop the stopwatch when audio begins playing"
+            ],
+            "expected_result": "Audio playback begins within 5 seconds of tapping the session. The elapsed time recorded by the stopwatch is 5 seconds or less."
+        },
+        {
+            "test_id": "T5_b",
+            "requirement_id": "FR5",
+            "scenario": "Loading indicator is displayed when session takes longer than 5 seconds to load",
+            "steps": [
+                "Throttle the test device to a slow network connection (e.g., 2G simulation via Android developer options)",
+                "Tap on a meditation session",
+                "Observe the screen between the tap and the moment audio begins playing"
+            ],
+            "expected_result": "A visible loading indicator (e.g., spinner or progress bar) is displayed immediately after the tap and remains visible until audio playback begins. The app does not show a blank screen or appear unresponsive during loading."
+        },
+        {
+            "test_id": "T6_a",
+            "requirement_id": "FR6",
+            "scenario": "Google Sign-In redirects back to the app automatically after authentication",
+            "steps": [
+                "Open the Headspace app on a device that has a Google account configured",
+                "Tap 'Sign in with Google' on the login screen",
+                "Complete Google authentication in the browser or system dialog that appears",
+                "Observe whether the app regains focus automatically"
+            ],
+            "expected_result": "After completing Google authentication, the Headspace app regains foreground focus automatically. The user is logged in and taken to the home screen without needing to manually switch back to the app or tap any additional button."
+        },
+        {
+            "test_id": "T6_b",
+            "requirement_id": "FR6",
+            "scenario": "Login loop does not occur when using Google Sign-In on returning user",
+            "steps": [
+                "Open the app on a device where the user previously had a session that has since expired",
+                "Tap 'Sign in with Google'",
+                "Complete the authentication step",
+                "Monitor whether the login screen reappears after authentication"
+            ],
+            "expected_result": "The login screen does not reappear after successful Google authentication. The user is taken directly to the home screen. The Google Sign-In dialog does not re-trigger."
+        },
+        {
+            "test_id": "T7_a",
+            "requirement_id": "FR7",
+            "scenario": "Active subscription is restored when signing in on a new device",
+            "steps": [
+                "Confirm an active subscription on Device A",
+                "Install the Headspace app on Device B (factory reset or different device)",
+                "Sign in to the same account credentials on Device B",
+                "Navigate to account or subscription settings on Device B"
+            ],
+            "expected_result": "The app on Device B recognises the active subscription and grants full content access. The subscription status screen shows the same plan details as on Device A. The user is not prompted to re-subscribe."
+        },
+        {
+            "test_id": "T7_b",
+            "requirement_id": "FR7",
+            "scenario": "Streak and session history are restored when signing in on a new device",
+            "steps": [
+                "Record the current streak count and total minutes meditated on Device A",
+                "Install the Headspace app on Device B",
+                "Sign in with identical credentials",
+                "Navigate to the stats or progress section on Device B"
+            ],
+            "expected_result": "The streak count and total cumulative minutes displayed on Device B match the values recorded on Device A. A new blank profile is not created; the historical data is fully restored."
+        },
+        {
+            "test_id": "T8_a",
+            "requirement_id": "FR8",
+            "scenario": "Specific error message shown when third-party benefit authentication fails",
+            "steps": [
+                "Attempt to sign in using a third-party benefit provider link (e.g., Cigna or NHS) with incorrect or expired benefit credentials",
+                "Observe the error message displayed by the app after the authentication attempt fails"
+            ],
+            "expected_result": "The app displays a specific error message that identifies the type of failure (e.g., 'Your employer benefit could not be verified. Please check with your HR department or benefit provider.'). The message does not read 'Oops, something went wrong' or any other generic text."
+        },
+        {
+            "test_id": "T8_b",
+            "requirement_id": "FR8",
+            "scenario": "Generic error message does not appear for any authentication failure type",
+            "steps": [
+                "Attempt to sign in with an expired Google token",
+                "Attempt to sign in with an invalid email and password combination",
+                "Attempt to sign in via a third-party benefit link that is no longer active",
+                "Record the error message shown for each failure scenario"
+            ],
+            "expected_result": "For each failure scenario, the app displays a distinct, informative error message specific to the type of failure. No scenario produces a generic message such as 'Oops, something went wrong' or 'An error occurred.'"
+        },
+        {
+            "test_id": "T9_a",
+            "requirement_id": "FR9",
+            "scenario": "Keyword search returns relevant results from across all content categories",
+            "steps": [
+                "Log in and navigate to the search feature from the primary navigation bar",
+                "Type the keyword 'anxiety' into the search input field",
+                "Observe the results returned"
+            ],
+            "expected_result": "The search results include content items from multiple content categories (e.g., meditations, courses, sleep casts) that are thematically related to anxiety. Results are displayed within 2 seconds of completing the input."
+        },
+        {
+            "test_id": "T9_b",
+            "requirement_id": "FR9",
+            "scenario": "Search is accessible from the primary navigation bar on any screen",
+            "steps": [
+                "Open the app and navigate to the Home screen",
+                "Confirm the search icon is visible in the navigation bar",
+                "Navigate to the Library screen and confirm the search icon remains in the navigation bar",
+                "Navigate to a content playback screen and confirm the search icon remains accessible"
+            ],
+            "expected_result": "The search icon or input is present in the navigation bar on every tested screen (Home, Library, playback). Tapping it from any screen opens the search interface without navigating away from the current section."
+        },
+        {
+            "test_id": "T10_a",
+            "requirement_id": "FR10",
+            "scenario": "In-progress course appears in the Continue section on the home screen",
+            "steps": [
+                "Log in and start but do not finish the first session of a multi-session course",
+                "Exit the session and navigate back to the home screen",
+                "Observe the home screen layout"
+            ],
+            "expected_result": "The home screen displays a 'Continue' or equivalent section containing the in-progress course, its title, and the percentage of the course completed. A tap on the item navigates directly to the next session in the course."
+        },
+        {
+            "test_id": "T10_b",
+            "requirement_id": "FR10",
+            "scenario": "Multiple in-progress courses all appear in the Continue section",
+            "steps": [
+                "Start the first session of Course A without completing the course",
+                "Start the first session of Course B without completing the course",
+                "Return to the home screen",
+                "Count the in-progress items shown in the Continue section"
+            ],
+            "expected_result": "Both Course A and Course B appear in the Continue section of the home screen, each showing the course title, completion percentage, and a tap target for the next session. Neither course is omitted."
+        },
+        {
+            "test_id": "T11_a",
+            "requirement_id": "FR11",
+            "scenario": "Sleep cast library can be filtered by session duration",
+            "steps": [
+                "Log in and navigate to the sleep cast library",
+                "Open the filter panel",
+                "Select a duration filter of '10–20 minutes'",
+                "Observe the resulting content list"
+            ],
+            "expected_result": "The displayed sleep cast list updates immediately to show only sleep casts with a duration within the selected range (10–20 minutes). Sleep casts outside this duration are no longer displayed."
+        },
+        {
+            "test_id": "T11_b",
+            "requirement_id": "FR11",
+            "scenario": "Meditation library can be filtered by topic and instructor simultaneously",
+            "steps": [
+                "Navigate to the meditation library",
+                "Open the filter panel",
+                "Select topic 'Sleep' and an available instructor name",
+                "Apply the filters and observe the results"
+            ],
+            "expected_result": "The meditation list updates to show only sessions that match both the selected topic ('Sleep') and the selected instructor. Sessions that match only one criterion are excluded. The filtered result loads without a full page reload."
+        },
+        {
+            "test_id": "T12_a",
+            "requirement_id": "FR12",
+            "scenario": "Total minutes and streak updated immediately on the session completion screen",
+            "steps": [
+                "Note the current total minutes meditated and streak count before starting a session",
+                "Complete a 10-minute meditation session",
+                "Observe the session completion screen that appears immediately after the session ends"
+            ],
+            "expected_result": "The session completion screen displays an updated total minutes meditated that is 10 minutes greater than the value recorded before the session. The streak count increments by 1 if the session is the first completed on that calendar day."
+        },
+        {
+            "test_id": "T12_b",
+            "requirement_id": "FR12",
+            "scenario": "Updated stats are visible on home screen without additional navigation",
+            "steps": [
+                "Complete a meditation session and note the updated stats on the completion screen",
+                "Tap the home button or navigate back to the home screen",
+                "Observe the stats section on the home screen without visiting the profile page"
+            ],
+            "expected_result": "The home screen displays the updated total minutes meditated and current streak count that match the values shown on the session completion screen. The user does not need to navigate to a separate profile or stats page to see these values."
+        },
+        {
+            "test_id": "T13_a",
+            "requirement_id": "FR13",
+            "scenario": "Recommendations differ from default after 5 completed sessions",
+            "steps": [
+                "Create a new account and complete 5 meditation sessions focused on the topic of 'anxiety'",
+                "Navigate to the home or discover screen",
+                "Compare the recommended content to a screenshot taken of the same screen immediately after account creation (before any sessions were completed)"
+            ],
+            "expected_result": "The recommended content shown after 5 completed anxiety-focused sessions includes at least one recommendation that reflects the user's history (e.g., more anxiety-related or similar-duration content) and differs meaningfully from the default post-signup recommendations."
+        },
+        {
+            "test_id": "T13_b",
+            "requirement_id": "FR13",
+            "scenario": "Recommendations refresh within 7 days of continued use",
+            "steps": [
+                "Record the content items shown in the recommendations section on Day 1",
+                "Complete at least 1 session per day for 7 consecutive days, exploring a different topic than the initial sessions",
+                "Return to the recommendations section on Day 7 and compare the displayed items to Day 1"
+            ],
+            "expected_result": "The recommendations section on Day 7 shows at least some content that was not present on Day 1 and that reflects the new topics explored during the 7-day period. The section has not remained completely static."
+        },
+        {
+            "test_id": "T14_a",
+            "requirement_id": "FR14",
+            "scenario": "At least 10 free sessions are accessible without a subscription",
+            "steps": [
+                "Install the app and create an account without starting a free trial or entering payment information",
+                "Browse the content library",
+                "Count the number of complete meditation sessions that can be played from start to finish without a subscription prompt"
+            ],
+            "expected_result": "At least 10 distinct, complete guided meditation sessions are playable without any subscription. Tapping on each of these sessions starts playback immediately without displaying a subscription or paywall prompt."
+        },
+        {
+            "test_id": "T14_b",
+            "requirement_id": "FR14",
+            "scenario": "Free sessions are clearly labelled in the content library",
+            "steps": [
+                "Open the app without a subscription",
+                "Browse the meditation content library",
+                "Identify any sessions that are available for free and note their labelling"
+            ],
+            "expected_result": "Each session available without a subscription is clearly labelled with a badge or tag such as 'Free' or 'Available without subscription'. Locked (subscription-required) sessions are also clearly distinguished, preventing confusion about which content is accessible."
+        }
+    ]
 }

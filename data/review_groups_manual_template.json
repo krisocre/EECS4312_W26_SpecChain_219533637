@@ -1,0 +1,134 @@
+{
+  "groups": [
+    {
+      "group_id": "G1",
+      "theme": "Subscription paywall and pricing complaints",
+      "review_ids": [
+        "7ee467eb-941f-41e3-b338-9f77b60b0945",
+        "821fd763-9b0a-4a44-ade7-cd53f0a968c7",
+        "3911395f-ddb9-4bc6-8347-b9edbb8cc5f2",
+        "787d96eb-024e-42e4-8b00-cbaef9750ccb",
+        "248efbef-d097-418d-9a82-949dedc2d8fa",
+        "75caa88e-536b-4cb7-87d0-888c41d52ead",
+        "50acc9da-7d1c-40bd-a31f-b72efd7203f3",
+        "eea169c7-da32-4676-8165-5f0568ad45b5",
+        "7cff71d6-1c95-4754-bed5-c5de16ab0e87",
+        "9b6362e6-3284-4330-abf3-2c6849c20131",
+        "dde42034-ce4b-47ff-b31e-610bfd0696d1",
+        "8ce80412-4a1b-43bc-a31f-5cc9100c66c9"
+      ],
+      "example_reviews": [
+        "I've had this app since 2018 and actually paid for it on and off (depending on my finances). They stopped offering aaany ongoing free content, so now it's no longer something I'll recommend to people or will purchase myself again. Old: Seems money grubbing to me. $70/year is the \"discounted\" price. Hah! And it's already in the top 5 money makers. Bye Headspace. I'll go try something else. OH! And don't bother downloading and creating an account if you're not ready to pay $13/MONTH or 70/year!",
+        "I originally got the app a long time ago and had the free version for a while. I then bought the subscription for the stress package. This really helped. However, since then the app seems to gradually be getting worse and will turn itself off in the middle of a meditation or a soundscape while you're trying to sleep. This means that whenever there is a pause in a meditation, I'm left wondering if the app has gone off again or if I'm still in the guided meditation, which causes anxiety."
+      ],
+      "manual_notes": [
+        "Confirm the theme label against the listed evidence reviews.",
+        "Replace any weak or off-topic review IDs before finalizing personas."
+      ]
+    },
+    {
+      "group_id": "G2",
+      "theme": "App crashes and performance degradation",
+      "review_ids": [
+        "da96150f-2e27-47ed-b177-b022cdf36af1",
+        "c6170462-c39d-4bd2-a786-71e9eabda099",
+        "61e60a67-233f-4f56-b239-bf91d7f1ab37",
+        "775252cc-9c34-4344-9c41-0c8ae62bf6c7",
+        "35e7fb9e-9141-43d1-9ca8-d8dc17ab0fae",
+        "a9aaaf65-13ad-40b5-ac2d-561a4226aac7",
+        "f1690a55-1186-49ff-bafe-34d10ca8c7dd",
+        "417dfe2d-39c0-4f09-9c7c-ad513fdba29f",
+        "63e34f14-c1b5-4ca8-a87d-b2515ebe1b62",
+        "4f32e0ff-a48f-413a-b22f-275e34205bdf",
+        "2d4cf215-9235-488b-939f-26877adad725",
+        "f49f3052-b1b4-4f2f-a097-f4140c22f770"
+      ],
+      "example_reviews": [
+        "While I like it to remind me to relax, it is sloooooooow. It takes forever to load initially and as you switch between the screens it takes even longer to load. I have to constantly close out of the app and go back in just to get the main page to load. When I'm frustrated, stressed or overwhelmed, have the app take so long to load to get to the exercises is NOT helpful. It defeats the purpose.",
+        "sleepcasts crash. total UI fail into complexity. they can't even get the stress management course right, it just loops on the intro video, the course doesn't get added to your main view so you have to go hunt for it again. and there's no way to see subsequent content in the course. I've watched headspace go from useful 5-7ish years ago to rock bottom cash grab today. spend your hard earned money with a company that appreciates it, not this one. fire your UI director, wrong direction."
+      ],
+      "manual_notes": [
+        "Confirm the theme label against the listed evidence reviews.",
+        "Replace any weak or off-topic review IDs before finalizing personas."
+      ]
+    },
+    {
+      "group_id": "G3",
+      "theme": "Login and account access failures",
+      "review_ids": [
+        "ec28e444-28c9-4fef-801b-138ed3c2cfda",
+        "36b38d2b-cf3d-4532-b87a-d25d7faed97e",
+        "9a6fea0d-9d62-4d1b-85e8-51e41c1bac78",
+        "84e827e7-10a3-4146-8c0d-cce1227a1845",
+        "2dd89585-db58-4fa5-8075-95648ad96337",
+        "d10447be-2bdd-4fbb-b90d-6d2042fc51a6",
+        "3c93d4c9-05b0-4994-b43a-6a900cad08e4",
+        "ae5a58b0-1e34-4c87-870e-fc88e1ff1b3a",
+        "4196faf3-68b3-4561-ae4d-94fb0fdb56ff",
+        "3461c98d-3e4e-489f-8c58-ffc43fb1db7d",
+        "3d3978fc-ee38-48f7-8896-4f2dc5e45be4",
+        "67271dbb-4cf5-41b7-b561-5b55b4c2d339"
+      ],
+      "example_reviews": [
+        "Huston you have a prob-lem.... after last update on android security pixel 7 I am able to open app but not start any meditations. I have to log in on web. this is a solid problem. I have tried stopping and restarting app but that worked once. I have tried uninstalling and re-installing and that did not work. generally a great app but you do need to fix this problem. contact me if you need more info. regards danny p.s. I have sent a email and someone is looking at it.",
+        "Installed as it was advertised as having some free content. Created a mandatory account and declined to enter credit card details. All content I can see in the app is locked - if there is really free content, there's no way to search or filter for it. Tried asking their AI, Ebb, to recommend free mediations and got the classic confused-AI experience where it kept saying \"Sure! You're correct, that one was not free, let me look up a free one for you\" and then recommending another locked option."
+      ],
+      "manual_notes": [
+        "Confirm the theme label against the listed evidence reviews.",
+        "Replace any weak or off-topic review IDs before finalizing personas."
+      ]
+    },
+    {
+      "group_id": "G4",
+      "theme": "Poor UI design and content navigation difficulty",
+      "review_ids": [
+        "1ea97fbc-4ada-4055-bed1-c577ba6d584a",
+        "3c078800-9d98-4ee6-a845-89e58116beb4",
+        "8a5f5cc8-d312-4f7c-ac3e-43035b2a5de1",
+        "83b04972-3328-435d-8f14-1da504c740b8",
+        "3f0fd700-63a6-4e95-8d22-2dff744ab908",
+        "b2c03f75-14b2-42d5-9424-81517bd7bae2",
+        "b095a0bb-dc13-46d4-9d5a-6939e8df029d",
+        "eda6f27d-2663-4f86-9bc1-00131d9bcf9b",
+        "292f92ce-3903-41e3-a4dc-d728dd35c5dd",
+        "2668da15-2aca-4de7-b82f-fe39acdd07e8",
+        "7d600699-265c-4c88-9391-bc73b8ca34c6",
+        "601fb3de-6c62-47ef-bda7-73e2fefe8081"
+      ],
+      "example_reviews": [
+        "Updated: Nearly a year ago, I mentioned that I was not happy with the political plugs I had come across while using this app. However, let me say I am quite happy with Headspace now, as they have made a huge (and beautiful) change-up to this program. The meditations, education, ambient sounds, motivations, etc. are all beautifully done and comfortable to spend time within. I've actually shared it with a few people. Thank you, Headspace folks, for making a beautiful, fun, and helpful product!",
+        "Update: un-installed, reinstalled. Now my track will play for about 2 minutes, then cuts out. It says it's still playing, but no sound. If I force close/reopen, can't open the track to play it. Currently not working on my galaxy s21 ultra. I can get the app to open and navigate to sleep, but I can't get any of the tracks to open. If I click on brown or orange noise, or the deep sleep binaural beat I usually use, it just hangs on a lack screen forever!"
+      ],
+      "manual_notes": [
+        "Confirm the theme label against the listed evidence reviews.",
+        "Replace any weak or off-topic review IDs before finalizing personas."
+      ]
+    },
+    {
+      "group_id": "G5",
+      "theme": "Positive mindfulness and mental wellness experience",
+      "review_ids": [
+        "3a713223-0492-48e2-a8ce-1ceb1a89b317",
+        "67625553-1ca8-49ac-802b-9ab406356e85",
+        "711bb30b-9721-46e3-b4a2-1565dd81c313",
+        "106fc4e3-4823-482c-a57e-5dae946595b1",
+        "813fc99f-fb1f-4d47-a58e-d3b5b4d3b5de",
+        "a22af734-37e2-49da-878a-b1f875697bf5",
+        "f25648f4-7d52-43dd-853a-7b8bf4380b3b",
+        "b550554b-07f7-4744-a27e-577f39eb08c4",
+        "ca923315-d7c8-4d15-81ae-6e9d927827c1",
+        "0742dc6d-9a9e-4cf9-b33c-409d4dc96839",
+        "1e000e32-49ed-4b09-a117-436d7364ae8a",
+        "d6af912e-6b28-43dd-bb62-88c31d9763f0"
+      ],
+      "example_reviews": [
+        "Headspace has gone from a beautifully simple and curated selection of accessible meditation and sleep tools to a bloated hodgepodge of features and tangentially-related projects. We don't need mental health coaching, study music, or workouts on our meditation app. It only takes away focus from the actual good part of the product and makes it harder and harder to access. In software development, multi-tasking is almost always a mistake, and Headspace is no exception.",
+        "Great app. I highly recommend it. Things that could be improved - skipping the intro of the meditations (my favourite one starts by saying \"we're halfway through the week\"), being able to make a playlist (back to back meditations for sleep could help us not look at our phone every 10 minutes)"
+      ],
+      "manual_notes": [
+        "Confirm the theme label against the listed evidence reviews.",
+        "Replace any weak or off-topic review IDs before finalizing personas."
+      ]
+    }
+  ]
+}

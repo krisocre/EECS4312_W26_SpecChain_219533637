@@ -3,13 +3,242 @@
     {
       "test_id": "T_auto_1",
       "requirement_id": "FR_auto_1",
-      "scenario": "Logging a workout without crashing",
+      "scenario": "Stable app experience during normal usage",
       "steps": [
-        "Open the workout logging screen",
-        "Enter workout details",
-        "Submit the workout"
+        "Install and launch Headspace app on a supported Android device",
+        "Interact with the app for 30 minutes or more",
+        "Monitor app performance over a 30-day period",
+        "Verify app crash count for the user within the 30-day period"
       ],
-      "expected_result": "The workout is saved successfully and the application remains stable."
+      "expected_result": "The app crashes 2 or fewer times within the 30-day period"
+    },
+    {
+      "test_id": "T_auto_2",
+      "requirement_id": "FR_auto_1",
+      "scenario": "App crash boundary testing with prolonged usage",
+      "steps": [
+        "Install and launch Headspace app on a supported Android device",
+        "Simulate 30 minutes of app interaction, followed by 29 days of inactivity",
+        "Interact with the app for an additional 30 minutes or more",
+        "Verify app crash count for the user within the subsequent 30-day period"
+      ],
+      "expected_result": "The app crashes 2 or fewer times within the 30-day period after the second interaction"
+    },
+    {
+      "test_id": "T_auto_3",
+      "requirement_id": "FR_auto_2",
+      "scenario": "Valid subscription login and immediate access to premium content",
+      "steps": [
+        "Launch Headspace app and login with valid subscription credentials",
+        "Wait for 5 seconds to allow system to process login",
+        "Navigate to meditation content library",
+        "Verify access to premium content"
+      ],
+      "expected_result": "The system displays correct subscription status and grants access to premium content within 5 seconds of login."
+    },
+    {
+      "test_id": "T_auto_4",
+      "requirement_id": "FR_auto_2",
+      "scenario": "Valid subscription login with unstable network and access to premium content",
+      "steps": [
+        "Launch Headspace app on a device with unstable network connection",
+        "Login with valid subscription credentials",
+        "Wait for 5 seconds to allow system to process login",
+        "Navigate to meditation content library and verify access to premium content"
+      ],
+      "expected_result": "The system displays correct subscription status and grants access to premium content within 5 seconds of login 95% of the time."
+    },
+    {
+      "test_id": "T_auto_5",
+      "requirement_id": "FR_auto_3",
+      "scenario": "New user views free meditation content",
+      "steps": [
+        "Launch Headspace app and create a new account",
+        "Navigate to meditation content section",
+        "Verify free content is displayed",
+        "Check remaining free content indicator"
+      ],
+      "expected_result": "The system displays at least 30 minutes of free meditation content with a clear indication of remaining free content available within the next 7-day period."
+    },
+    {
+      "test_id": "T_auto_6",
+      "requirement_id": "FR_auto_3",
+      "scenario": "New user exceeds free meditation content limit",
+      "steps": [
+        "Launch Headspace app and create a new account",
+        "Navigate to meditation content section",
+        "Consume 30 minutes of free meditation content",
+        "Verify updated remaining free content indicator"
+      ],
+      "expected_result": "The system indicates that no free meditation content is available until the next 7-day period."
+    },
+    {
+      "test_id": "T_auto_7",
+      "requirement_id": "FR_auto_4",
+      "scenario": "New user views subscription details with 14-day free trial",
+      "steps": [
+        "Launch Headspace app and navigate to subscription options",
+        "Tap on 'View subscription details' or similar button",
+        "Verify the displayed subscription details",
+        "Check for 14-day free trial period information"
+      ],
+      "expected_result": "The system displays the total subscription cost, including taxes, and offers a 14-day free trial period with a clear start and end date."
+    },
+    {
+      "test_id": "T_auto_8",
+      "requirement_id": "FR_auto_4",
+      "scenario": "New user views subscription details with no payment info required",
+      "steps": [
+        "Launch Headspace app and navigate to subscription options",
+        "Tap on 'Start free trial' or similar button",
+        "Verify the payment information screen",
+        "Check if payment information is required during the trial period"
+      ],
+      "expected_result": "The system does not require payment information during the 14-day free trial period."
+    },
+    {
+      "test_id": "T_auto_9",
+      "requirement_id": "FR_auto_5",
+      "scenario": "Happy Path: Load Meditation Session with Stable Internet",
+      "steps": [
+        "Launch the Headspace app on a supported device with a stable internet connection",
+        "Select a meditation session from the list of available sessions",
+        "Wait for the session to load",
+        "Verify the session has started playing"
+      ],
+      "expected_result": "The meditation session loads within 2 seconds with a success rate of 95% or higher."
+    },
+    {
+      "test_id": "T_auto_10",
+      "requirement_id": "FR_auto_5",
+      "scenario": "Edge Case: Load Meditation Session with Unstable Internet",
+      "steps": [
+        "Launch the Headspace app on a supported device with an unstable internet connection",
+        "Select a meditation session from the list of available sessions",
+        "Wait for 5 seconds to account for potential buffering",
+        "Verify if the session loads or an error message appears"
+      ],
+      "expected_result": "The app attempts to load the session but may display an error or buffering message due to the unstable connection."
+    },
+    {
+      "test_id": "T_auto_11",
+      "requirement_id": "FR_auto_6",
+      "scenario": "Valid subscription and completed sessions display accurate progress",
+      "steps": [
+        "Launch Headspace app and log in with a valid subscription",
+        "Complete at least 5 meditation sessions to establish a streak",
+        "Navigate to the progress dashboard",
+        "Verify the displayed sessions completed and streak match the server data"
+      ],
+      "expected_result": "The displayed progress information matches the actual data stored on the server with 99.9% accuracy."
+    },
+    {
+      "test_id": "T_auto_12",
+      "requirement_id": "FR_auto_6",
+      "scenario": "Edge case: Server data mismatch due to network issues",
+      "steps": [
+        "Launch Headspace app and log in with a valid subscription",
+        "Simulate a network issue to cause a server data sync error",
+        "Navigate to the progress dashboard",
+        "Verify the app displays a 'syncing' or 'error' state and notifies the user"
+      ],
+      "expected_result": "The app indicates a data sync issue and does not display inaccurate progress information."
+    },
+    {
+      "test_id": "T_auto_13",
+      "requirement_id": "FR_auto_7",
+      "scenario": "Happy-path meditation session with standard duration",
+      "steps": [
+        "Launch the Headspace app and navigate to the meditation library",
+        "Select a meditation session with a duration between 5-30 minutes",
+        "Start the meditation session",
+        "Verify the session runs to completion"
+      ],
+      "expected_result": "The system plays clear and audible voice guidance for the entire duration and displays a visual timer that accurately tracks the elapsed time with an accuracy of \u00b1 1 second."
+    },
+    {
+      "test_id": "T_auto_14",
+      "requirement_id": "FR_auto_7",
+      "scenario": "Boundary meditation session with 5-minute duration",
+      "steps": [
+        "Launch the Headspace app and navigate to the meditation library",
+        "Select a meditation session with a duration of exactly 5 minutes",
+        "Start the meditation session",
+        "Verify the session runs for 5 minutes \u00b1 1 second"
+      ],
+      "expected_result": "The system plays clear and audible voice guidance for the entire 5-minute duration and displays a visual timer that accurately tracks the elapsed time with an accuracy of \u00b1 1 second."
+    },
+    {
+      "test_id": "T_auto_15",
+      "requirement_id": "FR_auto_8",
+      "scenario": "Happy-path weekly progress summary with multiple sessions",
+      "steps": [
+        "Complete 3 meditation sessions on 3 consecutive days",
+        "Navigate to the app's progress tracking section",
+        "Verify the total number of sessions completed is displayed",
+        "Verify the weekly progress summary is displayed"
+      ],
+      "expected_result": "The system displays a weekly progress summary showing the total number of sessions completed, total minutes meditated, and a streak counter that accurately reflects 3 consecutive days with at least one meditation session."
+    },
+    {
+      "test_id": "T_auto_16",
+      "requirement_id": "FR_auto_8",
+      "scenario": "Edge-case weekly progress summary with single session",
+      "steps": [
+        "Complete 1 meditation session",
+        "Navigate to the app's progress tracking section",
+        "Verify the total number of sessions completed is displayed",
+        "Verify the streak counter is displayed"
+      ],
+      "expected_result": "The system displays a weekly progress summary showing 1 session completed, the correct total minutes meditated, and a streak counter of 1 day."
+    },
+    {
+      "test_id": "T_auto_17",
+      "requirement_id": "FR_auto_9",
+      "scenario": "Happy-path save meditation and verify",
+      "steps": [
+        "Launch Headspace app and navigate to meditation library",
+        "Select a meditation to save",
+        "Verify the meditation is displayed in the 'Saved' section within 2 navigation clicks",
+        "Play the saved meditation and verify it starts within 1 second"
+      ],
+      "expected_result": "The saved meditation is playable within 1 second of selection and displayed in the 'Saved' section."
+    },
+    {
+      "test_id": "T_auto_18",
+      "requirement_id": "FR_auto_9",
+      "scenario": "Edge-case save same meditation twice",
+      "steps": [
+        "Launch Headspace app and navigate to meditation library",
+        "Select a meditation to save",
+        "Save the same meditation again",
+        "Verify the meditation appears only once in the 'Saved' section"
+      ],
+      "expected_result": "The meditation appears only once in the 'Saved' section and is still playable within 1 second of selection."
+    },
+    {
+      "test_id": "T_auto_19",
+      "requirement_id": "FR_auto_10",
+      "scenario": "Happy Path: Verify Progress Tracker Accuracy",
+      "steps": [
+        "Launch Headspace app and log in",
+        "Complete a meditation session",
+        "Navigate to the progress tracker page",
+        "Verify the displayed data (sessions completed, total minutes practiced, streak counter)"
+      ],
+      "expected_result": "The system displays the correct number of sessions completed, total minutes practiced, and a streak counter."
+    },
+    {
+      "test_id": "T_auto_20",
+      "requirement_id": "FR_auto_10",
+      "scenario": "Edge Case: Verify Streak Counter Resets After 24 Hours",
+      "steps": [
+        "Launch Headspace app and log in",
+        "Complete a meditation session to establish a streak",
+        "Wait for 24 hours to pass without completing another session",
+        "Navigate to the progress tracker page and verify the streak counter"
+      ],
+      "expected_result": "The system displays a streak counter of 0 or resets the streak."
     }
   ]
 }

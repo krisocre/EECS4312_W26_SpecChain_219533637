@@ -1,12 +1,113 @@
 {
-  "groups": [
-    {
-      "group_id": "G1",
-      "theme": "App crashes during activity logging, THIS IS A AN EXAMPLE, PLEASE REMOVE ",
-      "review_ids": ["rev_12", "rev_33", "rev_45", "rev_89"],
-      "example_reviews": [
-        "The app crashes every time I log my run.",
-        "Logging workouts causes the app to freeze."
-      ]
-    }
-  ]}
+    "groups": [{
+            "group_id": "G1",
+            "theme": "Subscription paywall and pricing complaints",
+            "review_ids": [
+                "fc36cf61-52aa-4982-b8e8-6b2010ad1486",
+                "a818a7e5-8c84-4cd7-b69c-62513167aa73",
+                "5dd05804-f714-43ec-88a1-dde44431fcbf",
+                "a4ccacbf-b2ea-46ec-8e90-3fd7a4f15184",
+                "3e69d6c7-313c-4f65-97b1-99a40b519c38",
+                "c6d23b22-290f-4f63-8e93-66a50f52fff1",
+                "13a27745-13c7-48f1-a372-6e5ee40be8e4",
+                "b30bb2c5-1318-4569-82a4-eba23f97d80f",
+                "2181f1b1-4f60-4fdd-b0bf-f13efd235d50",
+                "af2723a3-04f8-447f-9ca4-7693eb9caf1b",
+                "99a34b09-2e49-4fb2-94a4-29ebc98ff34e",
+                "5ca67763-7ccd-48f4-bd03-31960ae51990"
+            ],
+            "example_reviews": [
+                "Too expensive. And getting them to verify official documents to get the student discount? Impossible! SheerID rejects pretty much anything uploaded from a cell phone claiming its not official. You can't use your student email to verify, you have to upload a document. Why use a verification site that won't verify me by my school provided email and rejects every document uploaded? Thanks HeadSpace... guess I won't relax. School isn't stressful or anything..\ud83d\ude44",
+                "highly disappointed. I was recommended this app by a specialist, only to find that to access anything, I have to either pay a yearly subscription or monthly of $19.95. Once I discovered this, I uninstalled the app. No way can I afford another expense, especially when I downloaded the app to help me relax."
+            ]
+        },
+        {
+            "group_id": "G2",
+            "theme": "App crashes and performance degradation",
+            "review_ids": [
+                "6d0be882-a490-435e-876f-372c830d84d9",
+                "d4d23acc-aea2-43be-94e2-d0258793cd74",
+                "d088eee2-e8c1-43fe-9175-0fbcb2212583",
+                "fde10934-2cf0-466c-a723-3ff1bcc28f86",
+                "801923d5-fbc1-4623-9660-778684a67b4b",
+                "c171fe6e-2534-417a-92c9-731ec3febdfa",
+                "248efbef-d097-418d-9a82-949dedc2d8fa",
+                "48d09379-ee23-4428-a349-982dc2e1e22a",
+                "3dde7f59-d44f-40ba-9501-ab3a7de6f69d",
+                "e58433bc-2c11-4c50-8349-f04b99ad8a29",
+                "4ae5ae35-115b-49ef-8a8f-becb40fb2cd4",
+                "2de226bd-76f0-4b5d-b16d-23dc01e7b566"
+            ],
+            "example_reviews": [
+                "March 2026-app crashes constantly Many years ago I had a subscription to headspace and I found the app at that time really intuitive: easy to find courses and follow a pathway. Now, I feel like this app is packed with so much stuff (great!) but the stuff is everywhere, not organized in an intuitive way like before. I find it hard to find where I left off with a pathway, the app is always recommending content, but not where I left off with something. IMHO content=great. Interface=not great",
+                "I didn't expect a 70$ a year app to have a 15 seconds loading screen every time you click on something until the recent update. And you have to opt out of them selling your personal data. The app is very difficult to navigate. there are hundreds of meditations which are the same thing with a few different words at the beginning. More doesn't always mean better."
+            ]
+        },
+        {
+            "group_id": "G3",
+            "theme": "Login and account access failures",
+            "review_ids": [
+                "15fe4b34-503e-4209-905f-1ebf4f5af7e7",
+                "c495cc99-e06b-4e6f-a3a5-15caa838bbc2",
+                "2b18ee9b-5580-4344-ae9f-6af752ed723a",
+                "b1e748f3-ceb4-458d-8379-4122958619e8",
+                "4fe50ba1-e06d-4027-b7d3-7bfeaeaed582",
+                "03541f5e-c81c-412f-a4fa-a4abeaa10feb",
+                "7dfc3626-8a47-4d6e-84ad-6a0d9dad117c",
+                "4199e009-3e46-4483-bf7b-c2839055abc7",
+                "bd3cbd20-a989-4c1f-9aa3-d99f9f693d11",
+                "afd2bc8c-e3be-4d42-be0a-35dc28e0e192",
+                "82f630f4-552b-44bf-86d8-4b2825ea0cca",
+                "8687ae38-0f81-4462-bc77-b204e3a12b49"
+            ],
+            "example_reviews": [
+                "After paying for a month, cancelling, and receiving confirmation of cancellation, Headspace has taken more money from my account. When I have tried to resolve this, they claimed they couldn't help me and I needed to ask for a refund through Google Play. However, suspiciously, Headspace took the payment directly from my account that time and not through Google Play. So I am stuck with a payment having gone through but no access to service.",
+                "Have to force stop and reopen the app several times just to get it to load, and thats only if I have the patience. I won't use it, which is unfortunate because I really liked this app a few years ago. Too bad they don't offer refunds. Now I'm stuck paying for an app that doesn't work properly."
+            ]
+        },
+        {
+            "group_id": "G4",
+            "theme": "Poor UI design and content navigation difficulty",
+            "review_ids": [
+                "a87c08c2-155e-4769-8a94-be20322bf4a9",
+                "5b05d887-0411-44dd-9a55-18e7aab9fad0",
+                "29d54e6c-8d47-4285-8571-b62cfb9fc5c6",
+                "51235b67-391e-4556-9937-b43260c33023",
+                "d9d4c4e1-e47d-495e-9270-9c60b4da5534",
+                "334f0e84-86b9-420e-93a3-76d392b4fc03",
+                "ef71b542-c602-4bd8-8d86-7f89d86e5269",
+                "f22ba192-fc39-4774-a95b-db89a6394c4e",
+                "541149e0-9f7f-4577-9938-d2bd6459819e",
+                "2ad429bf-faeb-4c57-85be-2a1f8751f857",
+                "4186c0fd-47e1-43fe-bfd8-b0cfbb9d7894",
+                "c16bee9b-be00-4909-90ee-493ebb191e8a"
+            ],
+            "example_reviews": [
+                "The meditations are great, but it so insanely hard to find anything in the app. I started a guided program and the next day at first it showed on the today page but after that it disappeared and I can't find it. UX could be improved for searching and finding stuff, going back to programs you've started or previously done without having to favorite them.",
+                "Although a good concept in theory, quite annoying in practice, even with a premium subscription: 1. No offline access whatsoever, the app does not load with data turned off. 2. Playing of podcasts, longer contents pauses regularly if my screen is not awake. 3. Unprofessional, unpleasant voice narration compared to industry standards. They might be experts in meditation but their voices are dissatifying. Medito and Fabolous are on another level. 4. The extensive library is confusing. Guide needed"
+            ]
+        },
+        {
+            "group_id": "G5",
+            "theme": "Positive mindfulness and mental wellness experience",
+            "review_ids": [
+                "49ee2835-5764-4956-afce-3aa857ac342d",
+                "9141c4e4-d3a4-4021-810a-b95b560cc424",
+                "c6a0d0f8-3dac-4f70-bf87-1c69419f1fb7",
+                "994a69f1-e765-412f-9157-fecdb4a32bd1",
+                "767ed037-efc7-41b0-8424-bb5d73a419d0",
+                "b887513e-7df6-4cc1-97e8-49bbe47f9aed",
+                "1166f13d-274b-4261-b853-7f40768244ed",
+                "b5bc6e51-8fa9-4554-ac4d-bbec958752a2",
+                "2520bc93-1bc7-4205-af44-ef88a2dfb2f4",
+                "f7d8bb4b-3640-4d8c-a5de-f8d79caa4680",
+                "d3e4736a-1aa7-4cd5-8501-1ea0805c7867",
+                "38ee5b1a-75f7-4010-a63a-d305c9d20964"
+            ],
+            "example_reviews": [
+                "This app is great for the meditation guidance. I like that you can choose your teacher, and how long or short your practice will be. But, the push to try therapy through Headspace gets annoying, especially when you already HAVE a therapist (not to mention that therapists who contract with apps are very often underpaid). I'd love a way to disable those features.",
+                "Headspace is awesome! so much content being offered to help you on your life's journey. I am grateful for this because I have suffered with chronic pain since I was a child. The information contained is amazing and helpful for you wherever you are at in this moment. I recommend Headspace and encourage everyone to give it a try!"
+            ]
+        }
+    ]
+}
